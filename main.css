@@ -4,8 +4,8 @@
 }
 
 img {
-	object-fit: cover;
+	object-fit: none;
 	/*min-height: 500px;
 	max-height: 500px;*/
-	height: auto;
+	min-height: 500px;
 }
