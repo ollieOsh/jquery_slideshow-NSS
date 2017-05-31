@@ -1,7 +1,6 @@
 #slideshow {
 	height: 500px;
 	width: 100%;
-	border: 1px solid #000;
 	position: relative;
 }
 
@@ -11,14 +10,11 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	/*background-position: 20% 70%;
-    background-repeat: no-repeat;
-	background-size: cover;*/
 }
 
 .arrow {
 	height: 500px;
-	width: 100px;
+	width: 60px;
 	position: absolute;
 	background-color: rgba(255, 255, 255, 0.1);
 	text-align: center;
@@ -36,7 +32,6 @@
 	font-size: 4em;
 	font-weight: 100;
 	margin-top: 220px;
-	border: 1px solid black;
 }
 
 /*#img--1 {

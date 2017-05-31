@@ -35,7 +35,7 @@ $(".img").mouseover(function() {
 	$(".img").mousemove(function() {
 		$(".arrow").removeClass("hidden");
 	})
-		// setTimeout("$('.arrow').addClass('hidden');", 1000)
+		setTimeout("$('.arrow').addClass('hidden');", 1000)
 })
 
 $("#right").click(forward);
