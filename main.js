@@ -14,12 +14,13 @@ function forward(event) {
 		id = 1;
 	}
 	console.log(id);
-	active.fadeOut('slow').addClass("hidden");
-	active.removeClass("active");
-	//active;
-	$('#img--' + id).fadeIn('slow').removeClass("hidden");
-	//$('#img--' + id);
-	$('#img--' + id).addClass("active");
+	$('#img--' + id).fadeIn(2000);
+	$('#img--' + id).removeClass("hidden");
+	active.fadeOut(2000, function(){
+		active.addClass("hidden");
+		active.removeClass("active");
+		$('#img--' + id).addClass("active");
+	})
 }
 
 function timeout(){
@@ -49,12 +50,13 @@ $("#left").click(function (event) {
 		id = 4;
 	}
 	console.log(id);
-	active.fadeOut('slow').removeClass("active");
-	//active;
-	active.addClass("hidden");
+	$('#img--' + id).fadeIn(2000);
 	$('#img--' + id).removeClass("hidden");
-	$('#img--' + id).fadeIn('slow');
-	$('#img--' + id).addClass("active");
+	active.fadeOut(2000, function(){
+		active.addClass("hidden");
+		active.removeClass("active");
+		$('#img--' + id).addClass("active");
+	})
 })
 
 setTimeout(timeout(), 10000);
